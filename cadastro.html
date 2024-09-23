@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro - Receitas Deliciosas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="formatos.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+        }
+
+        header {
+            height: 60px;
+        }
+
+        main {
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+
+        footer {
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho e Menu -->
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.html">
+                <img src="logo.png" alt="Logo do site" class="logo" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Área Principal -->
+    <main class="container-fluid mt-4">
+        <h1 class="text-center mb-4">Formulário de Cadastro</h1>
+        <form action="mailto:seuemail@exemplo.com" method="post" class="row">
+            <div class="col-md-6 mb-3">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-md-8 mb-3">
+                <label for="rua">Rua</label>
+                <input type="text" class="form-control" id="rua" name="rua" required>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="numero">Número</label>
+                <input type="number" class="form-control" id="numero" name="numero" required>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="complemento">Complemento</label>
+                <input type="text" class="form-control" id="complemento" name="complemento">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="cidade" name="cidade" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="estado">Estado</label>
+                <input type="text" class="form-control" id="estado" name="estado" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" name="cep" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="container-fluid bg-light text-center">
+        <p>&copy; 2024 Receitas Deliciosas - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

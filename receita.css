@@ -1,0 +1,55 @@
+/* Área que agrupa os painéis das receitas */
+.receitas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Painéis das receitas */
+.receita {
+    flex: 1 1 30%; /* 30% de largura e ajustável */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+}
+
+/* Formatação do nome da receita */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Imagem da receita */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Lista de ingredientes e modo de preparo */
+.card-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 5px;
+}
+
+/* Adicionar barra de rolagem vertical */
+main {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+/* Definições de altura */
+header {
+    height: 60px;
+}
+
+main {
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+footer {
+    height: 25px;
+}
